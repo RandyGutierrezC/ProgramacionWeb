@@ -128,70 +128,50 @@ body {
 }
 
 /* Estilo base (ya adaptado en parte) */
-/* Código existente (no se muestra aquí para no repetirlo) */
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Diseño general */
-    body {
-        font-size: 14px; /* Reducir el tamaño de la fuente */
-    }
-
-    /* Cabecera principal */
-    .headerP {
-        font-size: 1.2rem;
-        padding: 15px;
-    }
-
-    /* Botones en barra */
-    .bar {
-        flex-direction: column; /* Cambiar a disposición vertical */
-        align-items: center;
-        gap: 15px; /* Espaciado mayor entre botones */
-    }
-
-    /* Botones estilizados */
-    .styled-button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    /* Cabecera de clase */
-    .header {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
     /* Contenedor principal */
     .main-container {
         display: flex;
-        flex-direction: column; /* Cambiar a una columna */
-        gap: 15px; /* Reducir el espacio entre elementos */
+        flex-direction: column; /* Una columna para pantallas pequeñas */
+        gap: 15px; /* Espaciado entre los elementos */
+        padding: 10px; /* Reducir padding para móviles */
     }
 
     /* Visor de PDF */
     .pdf-container iframe {
-        height: 300px; /* Reducir la altura para móviles */
+        height: 250px; /* Reducir la altura del visor en móviles */
     }
 
-    /* Contenedor de tareas */
-    .tasks-container {
-        max-height: none; /* Permitir que crezca en altura */
-        padding: 15px;
+    /* Botón en la barra */
+    .styled-button {
+        width: 90%; /* Ajustar botones al ancho disponible */
+        margin: 0 auto; /* Centrar los botones */
     }
 
     /* Lista de tareas */
+    .tasks-container {
+        max-height: none; /* Permitir altura automática */
+        overflow-y: visible; /* Quitar el scroll vertical */
+    }
+
+    .tasks-container ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
     .tasks-container li {
-        font-size: 0.9rem;
-        padding: 8px;
+        font-size: 0.9rem; /* Reducir tamaño del texto */
     }
 
     /* Footer */
     .footer {
         font-size: 0.8rem;
-        padding: 8px;
     }
 }
+
+
 
 /* Media Query para pantallas muy pequeñas */
 @media (max-width: 480px) {
