@@ -126,3 +126,88 @@ body {
     color: white;
     font-size: 0.9rem;
 }
+
+/* Estilo base (ya adaptado en parte) */
+/* Código existente (no se muestra aquí para no repetirlo) */
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Diseño general */
+    body {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Cabecera principal */
+    .headerP {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    /* Botones en barra */
+    .bar {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center;
+        gap: 15px; /* Espaciado mayor entre botones */
+    }
+
+    /* Botones estilizados */
+    .styled-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Cabecera de clase */
+    .header {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Contenedor principal */
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Cambiar a una columna */
+        gap: 15px; /* Reducir el espacio entre elementos */
+    }
+
+    /* Visor de PDF */
+    .pdf-container iframe {
+        height: 300px; /* Reducir la altura para móviles */
+    }
+
+    /* Contenedor de tareas */
+    .tasks-container {
+        max-height: none; /* Permitir que crezca en altura */
+        padding: 15px;
+    }
+
+    /* Lista de tareas */
+    .tasks-container li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    /* Cabecera principal */
+    .headerP {
+        font-size: 1rem;
+    }
+
+    /* Botones estilizados */
+    .styled-button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    /* Lista de tareas */
+    .tasks-container li {
+        font-size: 0.8rem;
+    }
+}
